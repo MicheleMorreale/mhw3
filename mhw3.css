@@ -1,0 +1,946 @@
+body{
+  position: relative;
+  height: 100%;
+  width: 100%;
+font-size: 24px;
+font-family:'Inter', sans-serif;
+margin: auto;
+color: rgba(94, 88, 88, 0.801);
+background-color: black;
+}
+
+header{
+background-color: rgba(0, 0, 0, 0.3);
+background-image: url('header.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 600px;
+width: 100%;
+position: relative;
+display: flex;
+flex-direction: column;
+}
+
+nav{
+background-color: black;
+height: 55px;
+position: relative;
+display:flex;
+justify-content: flex-start;
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  a {
+    cursor: pointer;
+  }
+  #menu_icon{
+    display: none;
+  }
+
+#searchbar{
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content:space-between;
+  margin: 10px 10px;
+  position: relative;  
+  flex-wrap: wrap;
+  flex-shrink: 1
+}
+
+
+#searchbar img{
+
+  margin-left: 5px;
+  margin-top: 8px;
+}
+
+
+select{
+  border-style:hidden;
+  position: absolute;
+  left: 55px;
+  bottom: 10px;
+  height: 14px;
+}
+.hide{
+  display: none;
+}
+
+input{  
+border-color: rgb(30, 215, 96);
+padding-top:3px;
+border-radius: 3%;
+border-width: 2px;
+}
+#Testo{
+
+  
+padding-left: 64px;
+
+
+
+
+}
+#Bottone{
+  padding-left: 0px;
+  position: absolute;
+  bottom: 5px;
+  left: 292px;
+
+
+
+}
+
+#barra{
+
+  margin-left: 25px;
+
+}
+
+#result{
+margin-left: 60px;
+background-color: rgb(53, 52, 52);
+height: 100px;
+width: 172px;
+border-color: rgb(30, 215, 96);
+border-style: solid;
+border-width: 0.5px;
+border-top: 0px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+
+#result img{
+
+height: 40px;
+width: 40px;
+
+}
+
+
+
+  #search-view{
+    
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    justify-content:space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 0;
+    margin-top: 55px;
+    margin-left: 55px;
+    margin-right: 180px;
+    height: 250px;
+    overflow-y: scroll;
+
+  }
+
+  #search-view div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(53, 52, 52);
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;   
+    height: 150px;
+    width: 80px;
+    margin: 10px 10px;    
+    cursor:pointer;
+
+
+  }
+
+  #search-view img{
+
+    height: 64px;
+    width: 64px;
+    margin: auto;
+
+  }
+
+  #search-view p{
+
+    margin: 8px 2px;
+    color:whitesmoke;
+    border-color: black;
+    border-width: 1px;
+    font-size: 0.50rem;
+    line-height: 0.25cm;
+    text-align: center;    
+    margin: auto;
+
+
+  }
+  
+  
+  #show-content{
+    display: none;   
+    flex-direction: column;
+    position: absolute;
+    top: 0px;;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+
+  }
+
+  #show-content p{
+    color: whitesmoke;
+
+  }
+  #show-content h1{
+    color: whitesmoke;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
+
+  #show-content div{
+    
+    align-self: center;
+
+  }
+
+  .show-content{
+    display: flex;   
+    flex-direction: row;
+    justify-self:auto ;
+    text-align: center;
+
+  }
+
+  .showcontent_text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -5px;
+  }
+
+  #show-content img{
+    height: 200px;
+    width: 200px;
+    margin: 0px 5px;
+
+  }
+
+  #sezione-immagine{
+
+    margin: 0px 35px;
+
+
+  }
+
+  #descrizione-artista p{
+
+    text-align:center;
+    width: 700px;
+    margin-bottom: 85px;
+
+
+  }
+
+  #descrizione-artista a p{
+    font-size: 0.75rem;
+    margin: 5px 5px;
+    display: inline;
+
+
+
+  }
+
+  #top-tracks{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+
+
+  }
+  #top-tracks div{
+
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    width: 300px;
+
+  }
+
+  #testo-top-tracks{
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+
+  }
+
+  #testo-tracks{
+
+    align-items: center;
+
+
+  }
+
+  #artista{
+
+    margin-top: -15px;
+
+
+  }
+
+  #contenitore{
+
+    border-style: outset;
+    border-width: 0.25;
+    border-color: whitesmoke;
+
+  }
+
+  
+  #top-tracks img{
+    display: flex;
+    justify-content: center;
+
+    height: 64px;
+    width: 64px;
+
+  }
+  #top-tracks p{
+
+    text-align: center;
+    font-size: 0.75rem;
+    margin: 2px 5px;
+  }
+
+  #intestazione-artista{
+position: relative;
+top: 150px;
+
+  }
+
+
+  #blocco_int{
+
+    position: relative;
+    top:250px;
+
+
+  }
+
+
+  #titolo-sezione{
+    
+    color: whitesmoke;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 50px;
+  }
+
+  #canzone{
+
+    margin-top: 85px;
+
+
+  }
+
+#menubar{
+font-family:'Inter', sans-serif;
+font-weight: 600;
+color: rgb(245, 245, 245);
+margin-top: 8px;
+margin-left: 65px;
+}
+
+#menubar a{
+    font-size: 0.95rem;
+    background-color: rgb(53, 52, 52);
+    border-width: 2.5px;
+    border-style: solid;    
+    border-radius: 35px;
+    border-color: rgb(30, 215, 96);
+    margin-top: 25px;
+    margin-left: 30px;
+    padding: 5px 15px;
+}
+
+#profilo a{
+margin-left: 5px;
+position: absolute;
+top: -28px;
+
+}
+#profilo img{
+
+margin-top: -3px;
+}
+#profilo{
+position: absolute;
+right: 130px;
+margin-top: -25px;
+}
+
+#profilo_foto{
+border-radius: 50%;
+background-color: rgba(255, 255, 255,0.8);
+margin-right: 5px;
+border-width: 2.5px;
+border-style: solid;
+border-color: rgb(30, 215, 96);
+}
+
+#main{
+justify-content: center;
+text-align: center;
+margin: auto;
+}
+
+h1{
+  color: black;
+  font-size: 5rem;
+  font-weight: bold;
+
+}
+
+
+h2{
+  color: black;
+  font-size: 3rem;
+  font-weight:300;
+
+}
+
+section{
+position: relative;
+}
+
+h3{
+color: whitesmoke;
+margin-left: 10px;
+}
+
+/* .generi{    
+  position: relative;
+  color: whitesmoke;
+  bottom: -15px;
+  margin: auto;
+
+}
+
+#hiphop{
+  font-size: 2rem;
+  background-color: rgba(235, 96, 45, 0.842);
+  border-radius: 15px;  
+  padding: 15px 75px;
+  margin: auto;
+  position: absolute;
+  top: 160px;
+  left: 385px;
+
+}
+
+#pop{
+  font-size: 2rem;
+  background-color: rgba(39, 201, 53, 0.842);
+  border-radius: 15px;  
+  padding: 15px 108px;
+  margin-left: auto;
+  position: absolute;
+  top: 160px;
+  right: 385px;
+
+}
+
+#rap{
+  font-size: 2rem;
+  background-color: rgba(219, 186, 39, 0.842);
+  border-radius: 15px;  
+  padding: 15px 108px;
+  margin: auto;
+  position: absolute;
+  top: 360px;
+  left: 385px;
+}
+
+#rock{
+  font-size: 2rem;
+  background-color: rgba(206, 32, 32, 0.842);
+  border-radius: 15px;  
+  padding: 15px 100px;
+  margin: auto;
+  position:absolute;
+  top: 360px;
+  right:385px;
+
+}
+
+.generi a:hover{
+
+text-decoration: underline;
+
+} */
+
+#profilo a:hover{
+
+  background-color: rgba(0, 0, 0, 0.63);
+
+
+
+}
+
+#menubar a:hover{
+
+  background-color: rgba(0, 0, 0, 0.3);
+
+
+
+}
+
+#sezione_podcast{
+  
+margin-bottom: 700px;
+
+}
+#sezione_podcast img{
+  position: relative;
+  top: -55px;
+}
+
+ #sezione_podcast div{
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: -25px;
+  top: 270px;
+  left: 185px;
+
+
+}
+
+#sezione_podcast p{
+  color: rgba(245, 245, 245, 0.788);
+  font-size: 1.5rem;
+  position: relative; 
+  text-align:center;
+  width: 400px;
+  top:0px;
+  left:250px;
+ }
+  .topalbum{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+    }
+
+  .topalbum div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 125px;
+    margin-right:35px;
+    margin-left: 40px;
+   }
+
+  .topalbum h3{
+    position: relative;
+    top: -235px;
+    text-align: center;
+  }
+
+  .topalbum h4,h5{
+    position: relative;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 2px;
+  }  
+
+  .topalbum h4{
+    position: relative;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    top:10px;
+  }
+
+  .topalbum h5{
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: -10px;
+    top:15px;
+  }
+
+  #album1,#album2,#album3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: -30px;
+  }
+
+  .sezione_recensioni{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .sezione_recensioni p{
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+
+  .sezione_recensioni p,h4,h5,h6{
+    color: whitesmoke;
+    text-align: center;
+  }
+
+  .sezione_recensioni h6{
+    margin-top: -10px;
+  }
+
+  .sezione_recensioni h6:hover{
+    text-decoration: underline;    
+    }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(31, 31, 31);
+    color: rgba(255, 255, 255, .8);
+    padding: 2px 16px;
+    left: 0px;
+    right: 0px;
+    width: auto;
+    margin: auto;
+  }
+
+  footer p{
+
+    color: whitesmoke;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;    
+    margin: auto;
+
+
+  }
+
+  #descrizione_canzone{
+
+    margin: 5px 110px;
+    text-align: center;
+
+
+  }
+
+  @media(max-width:500px){
+
+
+    #barra{
+
+      margin-left: 12px;
+      margin-top: 5px;
+
+
+    }
+
+    select{
+
+      border-style: hidden;
+      border-radius: 20%;
+      border-width: 1px;
+      position: absolute;
+      left: 40px;
+      bottom: 12px;
+      height: 14px;
+
+
+    }
+
+    #menu_icon{
+      display: none;
+      border-radius: 50%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    
+    #menubar a,#logo{ 
+      display: none;
+      }
+
+      #profilo{
+        top:35px;
+        right: 5px;
+      }
+
+    #profilo_foto{ 
+      position: relative;
+      top:1px;
+      display: inline-block;      
+}
+
+  @media(max-width:500px){  
+
+    body{
+        font-size: 14px;
+        margin: auto;
+        width: auto;      
+   }
+
+    header{ 
+      height: 350px;
+      width: auto;
+      margin: auto;
+    }
+
+    h1{
+    font-size: 3.5rem;
+    }
+    h2{
+    font-size: 2rem;
+    } 
+
+}
+ 
+/* @media(max-width:500px){
+
+  .generi{
+
+    position: relative;
+    left: 35px;
+
+
+  }
+
+  #hiphop{
+    font-size: 1.25rem;
+    padding: 15px 20px;
+    margin: auto;
+    top: 35px;
+    left: 25px;
+  
+  }
+  
+  #pop{
+    font-size: 1.25rem;
+    padding: 15px 40px;
+    margin: auto;
+    top: 35px;
+    right: 105px;
+  
+  }
+  
+  #rap{
+    font-size: 1.25rem;
+    padding: 15px 40px;
+    margin: auto;
+    top: 135px;
+    left: 25px;
+  }
+  
+  #rock{
+    font-size: 1.25rem;
+    padding: 15px 35px;
+    margin: auto;
+    top: 135px;
+    right: 105px;
+  
+  }
+} */
+
+  @media(max-width:500px){
+    #sezione_podcast{ 
+
+      margin-bottom: 180px;
+
+}
+#sezione_podcast div{ 
+  top: 185px;
+  left: 10px;
+}
+#sezione_podcast img{
+height: 150px;
+width: 150px;
+left: 5px;
+margin-top: -55px;
+}
+
+#sezione_podcast p{ 
+top: -70px;
+left: 15px;
+text-align:center;
+font-size: 0.85rem;
+height: 220px;
+width: 220px;
+margin-top: -10px;
+}
+  }
+
+  @media(max-width:500px){  
+
+    #album1,#album2,#album3{
+      margin-top: 55px;    
+    }
+
+    .topalbum img {
+      height: 150px;
+      width: 150px;
+    }
+
+    .topalbum  {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      left: 0px;
+      right: 0px;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 85px; 
+     }
+
+    .topalbum div {
+     display: flex;
+     flex-direction: column;
+     justify-items: center;
+     text-align: center;
+     left: 0px;
+     right: 0px;
+    }
+
+    #album1,#album2,#album3{
+      right: 0px;
+      left: 0px;
+    }
+     .topalbum h4{
+      margin: auto;
+      font-size: 1.15rem;
+      top:15px;      
+      left: 0px;
+      right: 0px;
+     }
+
+     .topalbum h5{
+       margin: auto;
+      font-size: 0.85rem;
+      top:30px;
+      left: 0px;
+      right: 0px;
+     }
+
+     .topalbum h3{
+      top:50px;
+      left: 0px;
+      right: 0px;
+     }
+
+  }
+
+  @media(max-width:500px){
+
+    .sezione_recensioni {
+      flex-direction: column;
+      justify-content: center;
+      left:0px;
+      right:0px;
+    }
+
+    .sezione_recensioni img {
+      height: 150px;
+      width: 150px;
+    }
+  
+  .sezione_recensioni h4 {
+    position: relative;
+    top:-15px;
+    font-size: 1rem;
+  }
+
+  .sezione_recensioni h5 {
+    font-size: 0.75rem;
+    position: relative;
+    top:-25px; 
+   }
+
+   .voto {
+    position:relative;
+    font-weight: bold;
+    font-size: 0.75rem;
+    top: 15px;
+    margin: auto; 
+   }
+
+   .sezione_recensioni h6 {
+    font-size: 0.75rem;
+    position: relative;
+    font-weight: 500;
+   }
+
+   .sezione_recensioni p {
+    position: relative;
+    font-size: 0.75rem;
+    top:-25px;
+    margin-left: 20px;
+    margin-right: 20px; 
+   }
+  
+}
+
+
+}
+
+  
+  @media(max-width:500px){
+
+    footer{
+      position: relative;
+      background-color: rgb(31, 31, 31);
+      color: rgba(255, 255, 255, .8);
+      padding: 25px 120px;
+      width: auto;
+      text-align: center;
+      right: 0px;
+      left: 0px;
+      margin: auto;
+
+
+    }
+    footer p{
+      position: relative;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, .8);
+      margin: auto;
+      top: 15px;
+      bottom: 0px;
+      right: 0px;
+      left: 0px;
+      font-size: 0.55rem;
+      
+    }
+
+  }
+
+  
